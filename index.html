@@ -2,6 +2,12 @@
 <html>
 
 <head>
+      <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+      <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Autumn leaves</title>
@@ -9,9 +15,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+
+    
+     <!-- Load the Firebase library before loading the body. -->
+     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+
+     <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+     
+
 </head>
 
-<body><div>
+<body>
+    
+
+    
+
+
+      <!-- Load the application script, which will save data to our Firebase app when we click the button. -->
+      <script src="application.js"></script>
+
+
 
 
     <div id="box-2" >
@@ -79,6 +104,8 @@ CONNECTIONS
 
         </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
             </div>
+
+            
         </div>
     </div>
     
@@ -252,6 +279,9 @@ sd
     
     </div>
     </div>
+
+
+
         
     <div class="container-fluid"  style="padding-left:50px ;  padding-bottom:50px ;  padding-top:50px ;    background-color:white ;">
     
@@ -293,9 +323,13 @@ We are a dynamic team of creatives comprised of marketing,branding,design,web de
         
         
         </div>
-</div>
+
+        
+
+
     <div>
-        <div id="box-3"><div >
+        <div id="box-3">
+            <div >
 						
 
 					<br>
@@ -303,7 +337,7 @@ We are a dynamic team of creatives comprised of marketing,branding,design,web de
 
 <!-- the colored box  -->
 
-<div>
+
 
 	<div style="padding-top: 50px ; padding-left:50px ;" >
 
@@ -315,7 +349,8 @@ We are a dynamic team of creatives comprised of marketing,branding,design,web de
 		 </p>
 	
 		</div>
-	</div>
+    </div>
+    
 	
 						
 						<div style="font-size:80px ; padding-left: 50px ; ">
@@ -374,7 +409,7 @@ bother you again. Cross our hearts.
 							
 
 
-			    		</div></div>
+			    		
     </div>
 
     <!--  jab photo mile ga tb add kr dena team
@@ -429,46 +464,55 @@ bother you again. Cross our hearts.
 
 
 
-<div class="container"  style="padding-bottom: 50px ;">
+<div class="container-fluid" style="background-color: white;">
+    <div class="container"  style="padding-bottom: 50px ; background-color:white ;">
 
 				
-    <div style="padding-top: 50px ; padding-bottom:50px; " >
-
-        <div style="background-color:purple  ; width:70px  ; 
-         color: purple ; ">
+        <div style="padding-top: 50px ; padding-bottom:50px; " >
     
-         <p style="font-size: 5px;">
-    sd
-         </p>
-    
+            <div style="background-color:purple  ; width:70px  ; 
+             color: purple ; ">
+        
+             <p style="font-size: 5px;">
+        sd
+             </p>
+        
+            </div>
         </div>
-    </div>
-        <h2>Connect with us </h2>
-        <form action="/action_page.php">
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <h2>Connect with us </h2>
+            <form id="recom" >
+              <div class="form-group"  stye="max-width:50px ; ">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="pwd" placeholder="Enter name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="sub" placeholder="Enter subject" name="subj">
+              </div>
+              <div class="form-group">
+                <label for="name">Describe:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea3" ></textarea>
+    
+                
+                
+              </div>
+              
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="pwd" placeholder="Enter name" name="name">
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject:</label>
-            <input type="text" class="form-control" id="sub" placeholder="Enter subject" name="subj">
-          </div>
-          <div class="form-group">
-            <label for="name">Describe:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea3" ></textarea>
+    
 
-            
-            
-          </div>
-          
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </div>
-      
+</div>
+
+
+
+    </div>
+
+
 
       
 </div></div>
