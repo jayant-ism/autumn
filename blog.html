@@ -5,28 +5,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Autumn Leaves</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=deb1731e9e51f2f3ce40c94883816b0e">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js" defer></script>
-    <script src="assets/js/bs-init.js?h=cc4d20340936b09bec81533dd59db3a8" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer></script>
-    <script src="assets/js/creative.js?h=fc141d448d82aa9fa8d45eb52d27a193" defer></script>
-
- 
- 
     <style>
         .space-div{
+            height: 1rem;
+        }
+
+        .blog-content{
+            height: 20rem;
+        }
+
+        .blog-image{
+            height: 18rem;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+
+        .space-div-block{
             height: 5rem;
         }
+
+        .blog-content{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+        }
+
+        .blog-content-3{
+            height: 41rem;
+        }
+
+        .first-block-content, .second-block-content{
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+            display: flex;
+        }
+
+        .first-block-content-small{
+            display: none;
+        }
+
+        .first-block-content{
+            padding-left: 5px;
+        }
+
+        .second-block-content{
+            padding-right: 5px;
+        }
+
+        .blog-content:hover .blog-image {
+            transform: scale(1.05);
+        }
+
+        .blog-content:hover{
+            box-shadow: 3px 3px rgb(156, 155, 155);
+        }
+
+        @media screen and (max-width: 1050px) and (min-width: 900px){
+            .blog-content{
+                height: 25rem;
+            }
+            .blog-content-3{
+                height: 51rem;
+            }
+        }
+
 
         @media screen and (max-width: 900px) and (min-width: 750px){
             h2{
@@ -34,9 +85,6 @@
             }
             .content{
                 font-size: 12.5px;
-            }
-            .blog-content{
-                height: 15rem !important;
             }
         }
 
@@ -47,8 +95,14 @@
             .content{
                 font-size: 12.5px;
             }
+            .first-block-content, .second-block-content{
+                display: none;
+            }
+            .first-block-content-small{
+                display: block;
+            }
             .blog-content{
-                height: 30rem;
+                height: 30rem !important;
             }
         }
 
@@ -58,6 +112,15 @@
             }
             .content{
                 font-size: 10px;
+            }
+            .first-block-content, .second-block-content{
+                display: none;
+            }
+            .first-block-content-small{
+                display: block;
+            }
+            .blog-content{
+                height: 30rem !important;
             }
         }
     </style>
@@ -74,151 +137,319 @@
     
 
 
+    
     <header class="masthead text-center text-white d-flex" style="background-image:url('assets/img/header.jpg');">
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h1 class="text-uppercase"><strong  class="connections-div" data-aos="fade-up" data-aos-duration="300" >
-                   
-                        One solution to <br> all your problems!
+                    <h1 class="text-uppercase"><strong>
+                        MAKING 
+                        CONNECTIONS <br>
+                        DELIVERING 
+                        RESULTS 
                     </strong></h1>
                     <hr>
                 </div>
             </div>
             <div class="col-lg-8 mx-auto">
-
-                <h3 data-aos="zoom-in" data-aos-duration="1000">
-                    Are you struggling with finding an audience for your brand? 
-                    <br>
-                  
-                    
-
-
-                </h3>
-                <p class="text-faded mb-5"  data-aos="fade-down">
-                    Autumn leaves Solutions is the one stop solution to all your problems. An IIT incubated startup itself, ALS is a team of highly motivated people who’ll sky rocket your digital presence and performance in no time. 
-        
-                </p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#services" data-aos="fade-right" >Find Out More</a></div>
+                <p class="text-faded mb-5">
+                    We are a dynamic team of creatives comprised of marketing,branding,design,web development,video production, communication specialist and business development professional. We provide creative and affordable services to startups,small businesses and social media influencers looking for a partner for their digital media, design,lead generation, 
+                    and communications requirements. We at autumn leaves make sure that every story we create counts</p>
+                   
+                </p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#blog">Find Out More</a></div>
         </div>
     </header>
-  
-    
-    <div  class="container" style="padding: 100px 100px 100px 100px;width: 100%;">
 
-        <div class="container-fluid" id="blog">
-            <div class="col-sm" style="width: 100%;">
-                <div class="row border rounded blog-content" style="padding: 5px;background: linear-gradient(rgba(240, 234, 234, 0.842), rgba(189, 174, 174, 0.815));">
-                    <div class="col-md-4 blog-image" style="z-index: 10;">
-                        <img src="assets/img/affiliate_marketing.jpg" class="rounded float-left" width="100%" height="100%" >
-                    </div>
+    <div class="space-div"></div>
 
-                    <div class="col-sm text-center">
-                        <div class="col-sm">
-                            <h2>Affiliate Marketing</h2>
-                        </div>
+    <div class="space-div"></div>
 
-                        <div class="col-lg">
-                            <p class="content">Affiliate marketing is the process of earning a commission by promoting other people’s (or company’s) products. You find a product you like, promote it to others, and earn a piece of the profit for each sale that you make.</p>
-                        </div>
-                    </div>
+    <div class="first-block-content">
+        <div class="col-md-8" style="width: 100%">
+            <div class="row border rounded blog-content blog-content-1"style="padding: 5px;">
+                <div class="col-md-4 blog-image" style="z-index: 10">
+                    <img src="assets/img/affiliate_marketing.jpg" class="rounded float-left" width="100%" height="100%"/>
                 </div>
-
-                <div class="space-div"></div>
-
-                <div class="row border rounded blog-content" style="padding: 5px;background: linear-gradient(rgba(240, 234, 234, 0.842), rgba(189, 174, 174, 0.815));">
-                    <div class="col-sm text-center">
-                        <div class="col-sm">
-                            <h2>Business to Business</h2>
-                        </div>
-
-                        <div class="col-lg">
-                            <p class="content">BUSINESS TO BUSINESS MARKETING” (B2B MARKETING) refers to the exchange of either goods or services or both between two businesses where it involves the sale of goods and services by one organization to the other which either sells them to the consumers or use them to support their system</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 blog-image" style="z-index: 10;">
-                        <img src="assets/img/Business2BusinessMarketing.jpg" class="rounded float-left" width="100%" height="100%" >
-                    </div>
-                </div>
-
-                <div class="space-div"></div>
             
-                <div class="row border rounded blog-content" style="padding: 5px;background: linear-gradient(rgba(240, 234, 234, 0.842), rgba(189, 174, 174, 0.815));">
-                    <div class="col-md-4 blog-image" style="z-index: 10;">
-                        <img src="assets/img/Article_marketing.jpg" class="rounded float-left" width="100%" height="100%" >
-                    </div>
-                    
-                    <div class="col-sm text-center">
-                        <div class="col-sm">
-                            <h2>Marketing through newsletters and articles</h2>
-                        </div>
-
-                        <div class="col-lg">
-                            <p class="content">Newsletter Marketing involves sending out an informational newsletter to interested parties through emails. Article Marketing is a branch of content marketing which is a type of advertising where companies write and distribute short articles to a range of outlets.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="space-div"></div>
-
-                <div class="row border rounded blog-content" style="padding: 5px;background: linear-gradient(rgba(240, 234, 234, 0.842), rgba(189, 174, 174, 0.815));">
                 <div class="col-sm text-center">
-                        <div class="col-sm">
-                            <h2>Social Media Marketing</h2>
-                        </div>
-
-                        <div class="col-lg">
-                            <p class="content">Social media marketing (or S.M.M.), is a form of internet marketing that involves creating and sharing content on social media networks in order to achieve your marketing and branding goals.</p>
-                        </div>
+                    <div class="col-sm">
+                    <h2>Affiliate Marketing</h2>
                     </div>
-                    <div class="col-md-4 blog-image" style="z-index: 10;">
-                        <img src="assets/img/Social_media_marketing.jpg" class="rounded float-left" width="100%" height="100%" >
-                    </div>
-                </div>
             
-
-                <div class="space-div"></div>
-
-            
-                <div class="row border rounded blog-content" style="padding: 5px;background: linear-gradient(rgba(240, 234, 234, 0.842), rgba(189, 174, 174, 0.815));">
-                    <div class="col-md-4 blog-image" style="z-index: 10;">
-                        <img src="assets/img/internal_marketing.jpg" class="rounded float-left" width="100%" height="100%" >
-                    </div>
-
-                    <div class="col-sm text-center">
-                        <div class="col-sm">
-                            <h2>Internal Marketing</h2>
-                        </div>
-
-                        <div class="col-lg">
-                            <p class="content">Internal Marketing is promoting the company’s vision, goals, culture, and mission statements within the internal customers (the employees) by creating an emotional connection to the brand.</p>
-                        </div>
+                    <div class="col-lg">
+                    <p class="content">
+                        Affiliate marketing is the process of earning a commission by promoting other people’s (or company’s) products. You find a product you like, promote it to others, and earn a piece of the profit for each sale that you make.
+                    </p>
                     </div>
                 </div>
-
-                <div class="space-div"></div>
-
-                <div class="row border rounded blog-content" style="padding: 5px;background: linear-gradient(rgba(240, 234, 234, 0.842), rgba(189, 174, 174, 0.815));">
-                    <div class="col-sm text-center">
-                        <div class="col-sm">
-                            <h2>Inbound Marketing</h2>
-                        </div>
-
-                        <div class="col-lg">
-                            <p class="content">Inbound Marketing means doing business humanly, creating a meaningful relationship with visitors in the prospect of customers.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 blog-image" style="z-index: 10;">
-                        <img src="assets/img/Inbound_Marketing.jpg" class="rounded float-left" width="100%" height="100%" >
-                    </div>
-                </div>
-            </div>           
-        </div>
-    </div>    
-
-
+            </div>
     
+            <div class="space-div"></div>
+    
+            <div class="row border rounded blog-content blog-content-2" style="padding: 5px;">
+                <div class="col-sm text-center">
+                    <div class="col-sm">
+                    <h2>Business to Business</h2>
+                    </div>
+    
+                    <div class="col-lg">
+                    <p class="content">BUSINESS TO BUSINESS MARKETING” (B2B MARKETING) refers to the exchange of either goods or services or both between two businesses where it involves the sale of goods and services by one organization to the other which either sells them to the consumers or use them to support their system</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 blog-image" style="z-index: 10">
+                    <img
+                    src="assets/img/Business2BusinessMarketing.jpg"
+                    class="rounded float-left"
+                    width="100%"
+                    height="100%"
+                    />
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4 border rounded blog-content blog-content-3" style="padding: 5px;">
+            <div class="blog-image" style="z-index: 10">
+                <img src="assets/img/Article_marketing.jpg" class="rounded float-left" width="100%" height="100%"/>
+            </div>
+    
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Marketing through newsletters and articles</h2>
+                </div>
+    
+                <div class="col-lg">
+                <p class="content">
+                    Newsletter Marketing involves sending out an informational
+                    newsletter to interested parties through emails. Article Marketing
+                    is a branch of content marketing which is a type of advertising
+                    where companies write and distribute short articles to a range of
+                    outlets.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="space-div-block"></div>
+    
+    <div class="second-block-content">
+        <div class="col-md-4 border rounded blog-content blog-content-3" style="padding: 5px;">
+            <div class="blog-image" style="z-index: 10">
+                <img src="assets/img/internal_marketing.jpg" class="rounded float-left" width="100%" height="100%"/>
+            </div>
+    
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Internal Marketing</h2>
+                </div>
+    
+                <div class="col-lg">
+                    <p class="content">
+                        Internal Marketing is promoting the company’s vision, goals,
+                        culture, and mission statements within the internal customers (the
+                        employees) by creating an emotional connection to the brand.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="row border rounded blog-content blog-content-1" style="padding: 5px;">
+                <div class="col-sm text-center">
+                    <div class="col-sm">
+                    <h2>Social Media Marketing</h2>
+                    </div>
+    
+                    <div class="col-lg">
+                    <p class="content">
+                        Social media marketing (or S.M.M.), is a form of internet marketing
+                        that involves creating and sharing content on social media networks
+                        in order to achieve your marketing and branding goals.
+                    </p>
+                    </div>
+                </div>
+                <div class="col-md-4 blog-image" style="z-index: 10">
+                    <img
+                    src="assets/img/Social_media_marketing.jpg"
+                    class="rounded float-left"
+                    width="100%"
+                    height="100%"
+                    />
+                </div>
+            </div>
+    
+            <div class="space-div"></div>
+    
+            <div class="row border rounded blog-content blog-content-2" style="padding: 5px;">
+                <div class="col-md-4 blog-image" style="z-index: 10">
+                    <img
+                    src="assets/img/Inbound_Marketing.jpg"
+                    class="rounded float-left"
+                    width="100%"
+                    height="100%"
+                    />
+                </div>
+                <div class="col-sm text-center">
+                    <div class="col-sm">
+                    <h2>Inbound Marketing</h2>
+                    </div>
+    
+                    <div class="col-lg">
+                    <p class="content">
+                        Inbound Marketing means doing business humanly, creating a
+                        meaningful relationship with visitors in the prospect of customers.
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="space-div"></div>
+
+    <div class="first-block-content-small">
+        <div class="row border rounded blog-content"style="padding: 5px;">
+            <div class="col-md-4 blog-image" style="z-index: 10">
+                <img src="assets/img/affiliate_marketing.jpg" class="rounded float-left" width="100%" height="100%"/>
+            </div>
+        
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Affiliate Marketing</h2>
+                </div>
+        
+                <div class="col-lg">
+                <p class="content">
+                    Affiliate marketing is the process of earning a commission by promoting other people’s (or company’s) products. You find a product you like, promote it to others, and earn a piece of the profit for each sale that you make.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-div"></div>
+
+        <div class="row border rounded blog-content" style="padding: 5px;">
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Business to Business</h2>
+                </div>
+
+                <div class="col-lg">
+                <p class="content">BUSINESS TO BUSINESS MARKETING” (B2B MARKETING) refers to the exchange of either goods or services or both between two businesses where it involves the sale of goods and services by one organization to the other which either sells them to the consumers or use them to support their system</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 blog-image" style="z-index: 10">
+                <img
+                src="assets/img/Business2BusinessMarketing.jpg"
+                class="rounded float-left"
+                width="100%"
+                height="100%"
+                />
+            </div>
+        </div>
+
+        <div class="space-div"></div>
+
+        <div class="row border rounded blog-content" style="padding: 5px;">
+            <div class="col-md-4 blog-image" style="z-index: 10">
+                <img
+                src="assets/img/Article_marketing.jpg"
+                class="rounded float-left"
+                width="100%"
+                height="100%"
+                />
+            </div>
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Marketing through newsletters and articles</h2>
+                </div>
+
+                <div class="col-lg">
+                <p class="content">Newsletter Marketing involves sending out an informational
+                    newsletter to interested parties through emails. Article Marketing
+                    is a branch of content marketing which is a type of advertising
+                    where companies write and distribute short articles to a range of
+                    outlets.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-div"></div>
+
+        <div class="row border rounded blog-content" style="padding: 5px;">
+            <div class="col-md-4 blog-image" style="z-index: 10">
+                <img
+                src="assets/img/internal_marketing.jpg"
+                class="rounded float-left"
+                width="100%"
+                height="100%"
+                />
+            </div>
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Internal Marketing</h2>
+                </div>
+
+                <div class="col-lg">
+                <p class="content"> Internal Marketing is promoting the company’s vision, goals,
+                    culture, and mission statements within the internal customers (the
+                    employees) by creating an emotional connection to the brand.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-div"></div>
+
+        <div class="row border rounded blog-content" style="padding: 5px;">
+            <div class="col-md-4 blog-image" style="z-index: 10">
+                <img
+                src="assets/img/Social_media_marketing.jpg"
+                class="rounded float-left"
+                width="100%"
+                height="100%"
+                />
+            </div>
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Social Media Marketing</h2>
+                </div>
+
+                <div class="col-lg">
+                <p class="content"> Social media marketing (or S.M.M.), is a form of internet marketing
+                    that involves creating and sharing content on social media networks
+                    in order to achieve your marketing and branding goals.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-div"></div>
+
+        <div class="row border rounded blog-content" style="padding: 5px;">
+            <div class="col-md-4 blog-image" style="z-index: 10">
+                <img
+                src="assets/img/Inbound_Marketing.jpg"
+                class="rounded float-left"
+                width="100%"
+                height="100%"
+                />
+            </div>
+            <div class="col-sm text-center">
+                <div class="col-sm">
+                <h2>Inbound Marketing</h2>
+                </div>
+
+                <div class="col-lg">
+                <p class="content">Inbound Marketing means doing business humanly, creating a
+                    meaningful relationship with visitors in the prospect of customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-div"></div>
+
+    </div>
 
     <section id="contact">
         <div class="container">
